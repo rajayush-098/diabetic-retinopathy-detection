@@ -1,0 +1,50 @@
+# Python environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset: exclude images, CSVs and generated splits
+dataset/train_images/
+dataset/independent_splits/
+dataset/*.csv
+
+# Model files: exclude experimental models
+models/*.keras
+models/*.h5
+models/*.weights.h5
+
+# Keep the final selected model
+!models/mobilenetv2_independent_finetuned_best.keras
+
+# Checkpoints and logs
+models/checkpoints/
+logs/
+*.log
+
+# Generated outputs
+outputs/*
+
+# Keep selected visual results
+!outputs/gradcam/
+!outputs/screenshots/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
